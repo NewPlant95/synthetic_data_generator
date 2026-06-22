@@ -1,8 +1,8 @@
 # Adapting GameStudioBI To Other Projects
 
-## Short Answer
+## TLDR
 
-Yes. This program can be adapted to other projects and other types of companies.
+This program can be adapted to other projects and other types of companies.
 
 In its current form, it is easier to adapt to other game or live-service products than to completely unrelated businesses, because the overall simulation framework is reusable but the actual data model is still game-specific.
 
@@ -138,15 +138,6 @@ Examples:
   - completion rate
   - retention
 
-## The Right Way To Think About It
-
-The most accurate summary is:
-
-- the simulation framework is reusable
-- the domain model is not yet generic
-
-That means it already works as a pattern for other industries, but it is not yet a plug-and-play multi-industry simulator.
-
 ## Best Adaptation Approach
 
 If you want to reuse it for other company types, the cleanest approach is:
@@ -156,9 +147,9 @@ If you want to reuse it for other company types, the cleanest approach is:
 3. rewrite the scenario catalog
 4. rewrite the KPI layer
 
-## If You Want To Make It More Reusable
+## To Make It More Reusable
 
-If the goal is to support multiple industries from one codebase, the next architectural step would be to separate the project into:
+To support multiple industries from one codebase separate the project into:
 
 - a core simulation engine
 - domain-specific modules
@@ -182,30 +173,8 @@ For example:
 - `domains/ecommerce/`
 - `domains/streaming/`
 
-## Practical Recommendation
-
-For portfolio work, it is usually better not to generalize too early.
-
-A better approach is:
-
-- keep this project strong as a game-studio BI simulation
-- create a second project later using the same pattern for another domain
-
-Examples:
-
-- `SaaSBI`
-- `RetailBI`
-- `StreamingBI`
-
-That shows adaptability more clearly than forcing one codebase to become generic before there is a real need.
-
 ## Final Summary
 
-Yes, this program can be adapted to other simulated company datasets.
+This program can be adapted to other simulated company datasets.
 
-Right now:
-
-- the architecture is reusable
-- the business logic is game-specific
-
-So it is a strong foundation for other simulation projects, but adapting it well would require replacing the domain schema, behaviours, scenarios, and KPI definitions for the target business.
+It is a foundation for other simulation projects, though adapting it would require replacing the domain schema, behaviours, scenarios, and KPI definitions for the target business.

@@ -1,4 +1,4 @@
-# GameStudioBI
+# FakeGameStudioBI - SyntheticDataGenerator
 
 `GameStudioBI` is a Python 3.12+ project for simulating the internal business intelligence database of a fictional game studio inspired by large-scale procedural space exploration games.
 

@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: GameStudioBI
+Version: 0.1.0
+Summary: Internal business intelligence simulation scaffold for a fictional game studio inspired by space exploration titles.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: faker>=37.0.0
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: pandas>=2.2.0
+
+# GameStudioBI
+
+`GameStudioBI` is a Python 3.12+ project for simulating the internal business intelligence database of a fictional game studio inspired by large-scale procedural space exploration games.
+
+The project currently includes:
+
+- configurable simulation settings
+- a configurable player dimension generator
+- output, SQL, and docs directories
+
+## Structure
+
+- `config/` - configuration files and loader utilities
+- `generators/` - future synthetic data generators
+- `simulation/` - future simulation orchestration code
+- `output/` - generated export destination
+- `sql/` - future BI schema and query files
+- `docs/` - project documentation
+
+## Setup
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+## Configuration
+
+Edit [`config/simulation_config.toml`](/Users/neophytoskouphou/Desktop/Python%20Courses/fake_games_comp/config/simulation_config.toml) to change:
+
+- `player_count`
+- `simulation_start_date`
+- `simulation_end_date`
+- `random_seed`
+- country, platform, acquisition channel, player type, and age-band distributions
+- the registration date curve shape
+
+## Current status
+
+Running `python3 data_gen.py` generates `output/dim_player.csv` with the configured player dimension.

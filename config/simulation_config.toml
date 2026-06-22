@@ -1,0 +1,360 @@
+[simulation]
+player_count = 50000
+simulation_start_date = "2024-01-01"
+simulation_end_date = "2024-12-31"
+random_seed = 42
+
+[[live_service_events]]
+event_id = 1
+event_name = "Expedition Alpha"
+event_type = "Expedition"
+start_date = "2024-03-01"
+end_date = "2024-03-31"
+login_lift = 1.45
+session_length_lift = 1.12
+purchase_lift = 1.18
+
+[[live_service_events]]
+event_id = 2
+event_name = "Halloween Event"
+event_type = "Seasonal Event"
+start_date = "2024-10-20"
+end_date = "2024-10-31"
+login_lift = 1.28
+session_length_lift = 1.08
+purchase_lift = 1.15
+
+[[live_service_events]]
+event_id = 3
+event_name = "Winter Update"
+event_type = "Content Update"
+start_date = "2024-12-10"
+end_date = "2024-12-31"
+login_lift = 1.34
+session_length_lift = 1.10
+purchase_lift = 1.22
+
+[[business_scenarios]]
+scenario_id = 1
+scenario_name = "Creator Launch Push"
+scenario_type = "Marketing Campaign"
+start_date = "2024-01-15"
+end_date = "2024-02-07"
+ramp_up_days = 5
+ramp_down_days = 4
+description = "A creator-led acquisition burst expands top-of-funnel reach and registrations, but many newly acquired players behave like low-intent installs."
+expected_impact = "Registrations, DAU and revenue rise during the campaign, but the acquired cohort churns faster than baseline."
+affected_metrics = ["Impressions", "Registrations", "DAU", "Revenue", "Retention", "Churn"]
+primary_channel = "Creator/Streamer"
+acquisition_lift = 1.55
+marketing_efficiency_lift = 1.14
+marketing_spend_lift = 1.32
+login_lift = 1.08
+session_length_lift = 1.04
+purchase_lift = 1.10
+purchase_price_lift = 1.00
+cosmetic_purchase_lift = 1.05
+churn_lift = 1.02
+cohort_churn_lift = 1.25
+review_score_shift = 0.00
+review_recommendation_shift = -0.01
+
+[[business_scenarios]]
+scenario_id = 2
+scenario_name = "Viral Social Wave"
+scenario_type = "Viral Campaign"
+start_date = "2024-05-06"
+end_date = "2024-05-24"
+ramp_up_days = 4
+ramp_down_days = 5
+description = "A short-form social clip goes viral, driving rapid player growth through creator coverage and referrals before demand normalises."
+expected_impact = "Player growth accelerates sharply, then stabilises; revenue improves from higher volume more than from higher monetisation per player."
+affected_metrics = ["Registrations", "DAU", "Campaign ROI", "Revenue"]
+primary_channel = "Creator/Streamer"
+acquisition_lift = 1.85
+marketing_efficiency_lift = 1.20
+marketing_spend_lift = 1.15
+login_lift = 1.12
+session_length_lift = 1.05
+purchase_lift = 1.08
+purchase_price_lift = 1.00
+cosmetic_purchase_lift = 1.04
+churn_lift = 1.00
+cohort_churn_lift = 1.15
+review_score_shift = 0.10
+review_recommendation_shift = 0.01
+
+[[business_scenarios]]
+scenario_id = 3
+scenario_name = "Foundry Systems Update"
+scenario_type = "Major Update"
+start_date = "2024-06-10"
+end_date = "2024-07-07"
+ramp_up_days = 5
+ramp_down_days = 6
+description = "A well-received game update refreshes progression loops and gives existing players more reasons to return for several weeks."
+expected_impact = "DAU, session length and review sentiment improve for a sustained period, driven more by returning users than by acquisition."
+affected_metrics = ["DAU", "Average Session Length", "ReviewScore", "Retention", "Revenue"]
+primary_channel = "Steam Wishlist"
+acquisition_lift = 1.06
+marketing_efficiency_lift = 1.04
+marketing_spend_lift = 1.02
+login_lift = 1.26
+session_length_lift = 1.18
+purchase_lift = 1.10
+purchase_price_lift = 1.00
+cosmetic_purchase_lift = 1.08
+churn_lift = 0.88
+cohort_churn_lift = 0.96
+review_score_shift = 1.10
+review_recommendation_shift = 0.08
+
+[[business_scenarios]]
+scenario_id = 4
+scenario_name = "Summer Cosmetics Promotion"
+scenario_type = "Pricing Promotion"
+start_date = "2024-08-01"
+end_date = "2024-08-14"
+ramp_up_days = 3
+ramp_down_days = 3
+description = "A limited-time cosmetics promotion discounts vanity bundles and increases item volume without materially improving player retention."
+expected_impact = "Purchase volume increases while average revenue per transaction falls; engagement lifts modestly and then returns to baseline."
+affected_metrics = ["Purchases", "Revenue", "ARPPU", "Average Transaction Value"]
+primary_channel = "Seasonal Sale"
+acquisition_lift = 1.08
+marketing_efficiency_lift = 1.07
+marketing_spend_lift = 1.10
+login_lift = 1.06
+session_length_lift = 1.03
+purchase_lift = 1.58
+purchase_price_lift = 0.82
+cosmetic_purchase_lift = 1.70
+churn_lift = 1.01
+cohort_churn_lift = 1.00
+review_score_shift = 0.05
+review_recommendation_shift = 0.00
+
+[[business_scenarios]]
+scenario_id = 5
+scenario_name = "Deep Space Expansion"
+scenario_type = "Content Expansion"
+start_date = "2024-09-05"
+end_date = "2024-09-30"
+ramp_up_days = 4
+ramp_down_days = 5
+description = "A large content expansion increases activity among existing players more than it increases net new acquisition."
+expected_impact = "Engagement and revenue improve mostly through existing users, with only a modest bump in registrations."
+affected_metrics = ["DAU", "Average Session Length", "Revenue", "Retention"]
+primary_channel = "Steam Wishlist"
+acquisition_lift = 1.07
+marketing_efficiency_lift = 1.03
+marketing_spend_lift = 1.00
+login_lift = 1.24
+session_length_lift = 1.16
+purchase_lift = 1.12
+purchase_price_lift = 1.00
+cosmetic_purchase_lift = 1.10
+churn_lift = 0.92
+cohort_churn_lift = 0.98
+review_score_shift = 0.75
+review_recommendation_shift = 0.05
+
+[[business_scenarios]]
+scenario_id = 6
+scenario_name = "Server Instability Incident"
+scenario_type = "Server Outage"
+start_date = "2024-10-03"
+end_date = "2024-10-07"
+ramp_up_days = 1
+ramp_down_days = 2
+description = "A short outage and degraded service period suppresses gameplay and monetisation before usage gradually recovers."
+expected_impact = "Sessions, revenue and review sentiment dip sharply for a few days, then recover as stability returns."
+affected_metrics = ["DAU", "Revenue", "Session Count", "ReviewScore"]
+primary_channel = "Paid User Acquisition"
+acquisition_lift = 0.76
+marketing_efficiency_lift = 0.88
+marketing_spend_lift = 0.84
+login_lift = 0.42
+session_length_lift = 0.76
+purchase_lift = 0.38
+purchase_price_lift = 1.00
+cosmetic_purchase_lift = 0.92
+churn_lift = 1.22
+cohort_churn_lift = 1.05
+review_score_shift = -0.90
+review_recommendation_shift = -0.07
+
+[[business_scenarios]]
+scenario_id = 7
+scenario_name = "Balance Patch Backlash"
+scenario_type = "Poor Update"
+start_date = "2024-11-08"
+end_date = "2024-11-25"
+ramp_up_days = 3
+ramp_down_days = 4
+description = "A balance patch lands badly with core players, reducing engagement quality and increasing churn after the release."
+expected_impact = "Retention weakens, sessions shorten and churn rises despite revenue remaining near baseline for a short period."
+affected_metrics = ["Retention", "Churn", "Average Session Length", "ReviewScore"]
+primary_channel = "Platform Store Feature"
+acquisition_lift = 0.94
+marketing_efficiency_lift = 0.96
+marketing_spend_lift = 0.95
+login_lift = 0.88
+session_length_lift = 0.82
+purchase_lift = 0.94
+purchase_price_lift = 1.00
+cosmetic_purchase_lift = 0.96
+churn_lift = 1.34
+cohort_churn_lift = 1.08
+review_score_shift = -1.45
+review_recommendation_shift = -0.11
+
+[distributions.registration_curve]
+alpha = 2.4
+beta = 1.7
+
+[distributions.country]
+"United States" = 0.24
+"United Kingdom" = 0.10
+Germany = 0.09
+France = 0.07
+Canada = 0.06
+Australia = 0.05
+Brazil = 0.08
+Japan = 0.07
+Spain = 0.05
+Netherlands = 0.03
+Sweden = 0.03
+Poland = 0.05
+Turkey = 0.04
+"South Korea" = 0.04
+
+[distributions.platform]
+Steam = 0.62
+PlayStation = 0.23
+Xbox = 0.15
+
+[distributions.acquisition_channel]
+"Organic Search" = 0.22
+"Steam Wishlist" = 0.19
+"Platform Store Feature" = 0.17
+"Seasonal Sale" = 0.16
+"Creator/Streamer" = 0.11
+"Friend Referral" = 0.09
+"Paid User Acquisition" = 0.06
+
+[distributions.player_type]
+Explorer = 0.31
+Builder = 0.19
+Trader = 0.12
+Casual = 0.24
+Hardcore = 0.14
+
+[distributions.age_band]
+"16-20" = 0.14
+"21-25" = 0.24
+"26-30" = 0.22
+"31-35" = 0.17
+"36-40" = 0.11
+"41-50" = 0.09
+"51-65" = 0.03
+
+[behaviour_profiles.Explorer.daily_login_probability]
+alpha = 11.0
+beta = 12.0
+
+[behaviour_profiles.Explorer.average_session_length_minutes]
+mean_minutes = 92.0
+std_dev_minutes = 28.0
+
+[behaviour_profiles.Explorer.purchase_probability]
+alpha = 3.5
+beta = 32.0
+
+[behaviour_profiles.Explorer.churn_probability]
+alpha = 4.5
+beta = 92.0
+
+[behaviour_profiles.Explorer.mission_completion_probability]
+alpha = 12.0
+beta = 8.5
+
+[behaviour_profiles.Builder.daily_login_probability]
+alpha = 10.0
+beta = 13.0
+
+[behaviour_profiles.Builder.average_session_length_minutes]
+mean_minutes = 106.0
+std_dev_minutes = 34.0
+
+[behaviour_profiles.Builder.purchase_probability]
+alpha = 4.5
+beta = 30.0
+
+[behaviour_profiles.Builder.churn_probability]
+alpha = 4.0
+beta = 96.0
+
+[behaviour_profiles.Builder.mission_completion_probability]
+alpha = 10.0
+beta = 9.0
+
+[behaviour_profiles.Trader.daily_login_probability]
+alpha = 9.0
+beta = 14.0
+
+[behaviour_profiles.Trader.average_session_length_minutes]
+mean_minutes = 78.0
+std_dev_minutes = 24.0
+
+[behaviour_profiles.Trader.purchase_probability]
+alpha = 6.0
+beta = 27.0
+
+[behaviour_profiles.Trader.churn_probability]
+alpha = 5.0
+beta = 90.0
+
+[behaviour_profiles.Trader.mission_completion_probability]
+alpha = 11.0
+beta = 9.0
+
+[behaviour_profiles.Casual.daily_login_probability]
+alpha = 6.0
+beta = 19.0
+
+[behaviour_profiles.Casual.average_session_length_minutes]
+mean_minutes = 42.0
+std_dev_minutes = 16.0
+
+[behaviour_profiles.Casual.purchase_probability]
+alpha = 2.6
+beta = 35.0
+
+[behaviour_profiles.Casual.churn_probability]
+alpha = 8.0
+beta = 72.0
+
+[behaviour_profiles.Casual.mission_completion_probability]
+alpha = 7.0
+beta = 13.0
+
+[behaviour_profiles.Hardcore.daily_login_probability]
+alpha = 16.0
+beta = 7.5
+
+[behaviour_profiles.Hardcore.average_session_length_minutes]
+mean_minutes = 132.0
+std_dev_minutes = 40.0
+
+[behaviour_profiles.Hardcore.purchase_probability]
+alpha = 6.5
+beta = 25.0
+
+[behaviour_profiles.Hardcore.churn_probability]
+alpha = 3.5
+beta = 105.0
+
+[behaviour_profiles.Hardcore.mission_completion_probability]
+alpha = 16.0
+beta = 4.5

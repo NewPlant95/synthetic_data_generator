@@ -1,0 +1,38 @@
+CampaignID,CampaignName,Channel,CampaignKind,CampaignStartDate,CampaignEndDate,ScenarioID,ScenarioName,ScenarioType,Spend,Impressions,Clicks,Installs,Registrations
+18,Creator/Streamer Creator 1,Creator/Streamer,Always On,2024-01-01,2024-12-31,,,,2669.56,63878,3490,1414,1084
+19,Creator/Streamer Broadcast 2,Creator/Streamer,Always On,2024-01-01,2024-12-31,,,,3649.46,87582,3605,1526,1144
+20,Creator/Streamer Galaxy 3,Creator/Streamer,Always On,2024-01-01,2024-12-31,,,,8135.56,156567,5053,1706,1197
+21,Creator/Streamer Pulse 4,Creator/Streamer,Always On,2024-01-01,2024-12-31,,,,2895.72,70230,3570,1633,1211
+22,Creator/Streamer Relay 5,Creator/Streamer,Always On,2024-01-01,2024-12-31,,,,5541.92,62219,3769,1576,1238
+31,Creator Launch Push Creator,Creator/Streamer,Scenario Burst,2024-01-15,2024-02-07,1,Creator Launch Push,Marketing Campaign,344.21,2505,161,62,42
+32,Viral Social Wave Broadcast,Creator/Streamer,Scenario Burst,2024-05-06,2024-05-24,2,Viral Social Wave,Viral Campaign,1744.13,20863,1007,491,412
+23,Friend Referral Referral 1,Friend Referral,Always On,2024-01-01,2024-12-31,,,,873.68,23900,2480,1682,1361
+24,Friend Referral Squad 2,Friend Referral,Always On,2024-01-01,2024-12-31,,,,1834.95,50402,3419,1831,1488
+25,Friend Referral Co-Op 3,Friend Referral,Always On,2024-01-01,2024-12-31,,,,1268.07,34191,2867,1873,1547
+1,Organic Search Atlas 1,Organic Search,Always On,2024-01-01,2024-12-31,,,,2501.61,100393,6148,3188,2473
+2,Organic Search Signal 2,Organic Search,Always On,2024-01-01,2024-12-31,,,,6543.19,119815,8288,3614,2661
+3,Organic Search Nebula 3,Organic Search,Always On,2024-01-01,2024-12-31,,,,6265.31,155814,8291,3394,2781
+4,Organic Search Frontier 4,Organic Search,Always On,2024-01-01,2024-12-31,,,,3896.09,123930,6776,3596,2876
+26,Paid User Acquisition Prospecting 1,Paid User Acquisition,Always On,2024-01-01,2024-12-31,,,,4902.47,78402,2528,769,526
+27,Paid User Acquisition Growth 2,Paid User Acquisition,Always On,2024-01-01,2024-12-31,,,,6245.33,44266,2164,854,556
+28,Paid User Acquisition Acquisition 3,Paid User Acquisition,Always On,2024-01-01,2024-12-31,,,,8474.67,163829,3522,942,583
+29,Paid User Acquisition Orbit 4,Paid User Acquisition,Always On,2024-01-01,2024-12-31,,,,6946.84,52010,2587,862,588
+30,Paid User Acquisition Reach 5,Paid User Acquisition,Always On,2024-01-01,2024-12-31,,,,8139.95,117810,2943,982,602
+36,Server Instability Incident Prospecting,Paid User Acquisition,Scenario Burst,2024-10-03,2024-10-07,6,Server Instability Incident,Server Outage,69.21,1132,40,15,9
+10,Platform Store Feature Featured 1,Platform Store Feature,Always On,2024-01-01,2024-12-31,,,,5417.26,55234,4448,2217,1787
+11,Platform Store Feature Orbit 2,Platform Store Feature,Always On,2024-01-01,2024-12-31,,,,4722.88,49216,4561,2750,2027
+12,Platform Store Feature Showcase 3,Platform Store Feature,Always On,2024-01-01,2024-12-31,,,,8472.11,116951,7131,2840,2111
+13,Platform Store Feature Constellation 4,Platform Store Feature,Always On,2024-01-01,2024-12-31,,,,5539.02,86164,5991,2469,2103
+37,Balance Patch Backlash Orbit,Platform Store Feature,Scenario Burst,2024-11-08,2024-11-25,7,Balance Patch Backlash,Poor Update,182.17,3546,310,182,159
+14,Seasonal Sale Summer 1,Seasonal Sale,Always On,2024-01-01,2024-12-31,,,,4070.92,39309,3729,2176,1811
+15,Seasonal Sale Autumn 2,Seasonal Sale,Always On,2024-01-01,2024-12-31,,,,5612.05,64453,4467,2380,1908
+16,Seasonal Sale Holiday 3,Seasonal Sale,Always On,2024-01-01,2024-12-31,,,,5955.78,50639,4148,2359,1941
+17,Seasonal Sale Anniversary 4,Seasonal Sale,Always On,2024-01-01,2024-12-31,,,,6571.94,43238,4648,2593,2055
+34,Summer Cosmetics Promotion Anniversary,Seasonal Sale,Scenario Burst,2024-08-01,2024-08-14,4,Summer Cosmetics Promotion,Pricing Promotion,407.15,4978,314,221,195
+5,Steam Wishlist Wishlist 1,Steam Wishlist,Always On,2024-01-01,2024-12-31,,,,1762.38,54699,3239,1893,1564
+6,Steam Wishlist Voyager 2,Steam Wishlist,Always On,2024-01-01,2024-12-31,,,,2325.77,65950,4794,2119,1739
+7,Steam Wishlist Launch 3,Steam Wishlist,Always On,2024-01-01,2024-12-31,,,,2951.71,40570,3215,2090,1760
+8,Steam Wishlist Update 4,Steam Wishlist,Always On,2024-01-01,2024-12-31,,,,2287.17,47802,3735,2186,1814
+9,Steam Wishlist Expedition 5,Steam Wishlist,Always On,2024-01-01,2024-12-31,,,,3604.92,55540,3574,2229,1898
+33,Foundry Systems Update Launch,Steam Wishlist,Scenario Burst,2024-06-10,2024-07-07,3,Foundry Systems Update,Major Update,322.7,9348,652,430,359
+35,Deep Space Expansion Expedition,Steam Wishlist,Scenario Burst,2024-09-05,2024-09-30,5,Deep Space Expansion,Content Expansion,598.47,10490,763,445,390

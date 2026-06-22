@@ -1,0 +1,8 @@
+README.md
+data_gen.py
+pyproject.toml
+GameStudioBI.egg-info/PKG-INFO
+GameStudioBI.egg-info/SOURCES.txt
+GameStudioBI.egg-info/dependency_links.txt
+GameStudioBI.egg-info/requires.txt
+GameStudioBI.egg-info/top_level.txt

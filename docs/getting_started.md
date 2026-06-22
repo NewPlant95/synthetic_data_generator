@@ -1,8 +1,8 @@
-# GameStudioBI Overview and Run Guide
+# FakeGameStudio - SyntheticDataGenerator Overview and Run Guide
 
 ## What This Program Does
 
-`GameStudioBI` generates a synthetic business intelligence dataset for a fictional live-service game studio.
+The program generates a synthetic business intelligence dataset for a fictional live-service game studio.
 
 The goal is not just to create random rows. The project simulates believable business behavior so the data can support portfolio dashboards and analysis in tools such as Tableau, Power BI, SQL, and Python.
 
